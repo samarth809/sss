@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4ec, #e6e6fa);
+    color: #754568;
+    text-align: center;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.top-text {
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(35px, 8vw, 60px);
+    color: #d63384;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #a64d79;
+    margin-top: 10px;
+}
+
+.cake {
+    font-size: 85px;
+    margin: 25px;
+    animation: bounce 2s infinite;
+}
+
+.subtitle {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #d6338450;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #b92370;
+}
+.photo-box{
+  width:100% ; 
+  max-width:300px ; 
+  height: 350px ; 
+  object-fit: cover;
+  border-radius: 20px ; 
+}
+
+.letter {
+    display: none;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px 25px;
+    background: #ffffffb8;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #9d668333;
+    line-height: 1.8;
+}
+
+.letter h2 {
+    color: #d63384;
+    margin-bottom: 25px;
+}
+
+.memories {
+    padding: 60px 20px;
+}
+
+.memories h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+
+
+footer {
+    padding: 25px;
+    background: #d6338420;
+}
+
+.hearts {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    animation: bounce 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .letter {
+        margin: 25px 15px;
+    }
+}
